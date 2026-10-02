@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container1 {
+            background-image: linear-gradient(to right, rgb(85, 10, 10), black, black);
+            width: 100%;
+            height: 40%;
+            padding: 60px;
+        }
+
+        .container1>h1 {
+            padding: 0px;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 40px;
+        }
+
+        .container1>p {
+            padding: 0px;
+            color: white;
+            font-family: Arial, snas-serif;
+        }
+
+        .b1 {
+            height: 50px;
+            width: 100px;
+            border: 0px;
+            border-radius: 5px;
+            margin: 0px 10px 0px 0px;
+        }
+
+        .b2 {
+            height: 50px;
+            width: 150px;
+            background-color: rgb(78, 78, 78);
+            border: 0px;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .container2 {
+            padding: 0px 0px 0px 60px;
+        }
+
+        .c1>h4 {
+            padding: 0px;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .boxes {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            
+        }
+         .c1{
+            overflow: visible;
+         }
+        .boxes>.box {.b1
+            width: 200px;
+            height: 100px;
+            background-color: rgb(9, 204, 218);
+            flex-shrink: 0;
+            transform-origin: center;
+            margin: 0px 0px 10px 0px;
+            transition: transform 0.25s;
+        }
+        .box:hover{
+            transform: scale(1.05);
+            z-index: 10;
+        }
+        .c2>h4 {
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .c3>h4{
+            color:white;
+            font-family: Arial,sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <h1>Midnight Horizon</h1>
+        <p>
+            A stranded astronaut must choose between saving her crew or completing <br>
+            humanity's last mission before the signal fades foreever.
+        </p>
+
+        <button class="b1">Play</button>
+        <button class="b2">More Info</button>
+    </div>
+    <div class="container2">
+        <div class="c1">
+            <h4>Trending Now</h4>
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="c2">
+            <h4>Continue Watching</h4>
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <div class="c3">
+            <h4>Action Movies</h4>
+            <div class="boxes">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>

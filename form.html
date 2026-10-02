@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         input{
+            margin: 3px;
+            border-width: 0 0 2px 0;
+            border-color: red;
+         }
+         input:required{
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         input:optional{
+            font-family: Montana;
+         }
+         .email:valid{
+            color: aqua;
+         }
+         .email:invalid{
+            color: red;
+         }
+         #range:in-range{
+            color: green;
+         }
+         input:out-of-range{
+            color: red;
+            font-size: 30px;
+        }
+        input:placeholder-shown{
+            font-size: 20px;
+        }
+        input:read-only{
+            background-color: transparent;
+            border-width: 0px;
+        }
+        input:read-write{
+           box-shadow: 3px 3px 3px black;
+        }
+        input:checked{
+            box-shadow: 3px 3px 3px black;
+        }
+        #cbox{
+            width: 50px;
+            height: 50px;
+        }
+        input:enabled{
+            color: black;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="first name" required>
+        <input type="text" placeholder="middle name">
+        <input type="text" placeholder="last name" required>
+        <input type="email" class="email" placeholder="email" required>
+        <input type="number" name="" id="range" placeholder="age" min="18" max="200">
+        <input type="text" name="" id="read" placeholder="read only" disabled>
+        <input type="text" id="rdwt" placeholder="read and write">
+        <input type="checkbox" name="" id="cbox" >
+    </form>
+</body>
+</html>

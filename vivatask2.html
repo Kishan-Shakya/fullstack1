@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+    .mh{
+    font-size: 40px;
+    font-weight: 800;
+   }
+   .mp{
+    font-weight: 600;
+   }
+   .container{
+    display: flex;
+    flex-direction: row;
+   }
+   .c1{
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    border-radius: 10px;
+   }
+   .c2{
+    width: 200px;
+    height: 500px;
+   }
+    </style>
+    
+</head>
+
+<body>
+    <h1 class='mh'>Task 2 - Ecommerce Product Listing</h1>
+    <p class="mp">Build a responsive SaaS landing page using Tailwind CSS, with Flexbox for navigation <br>and Grid for the feature
+        section </p>
+    <div class="container">
+        <div class="c1">
+            <div class="flex flex-row p-">
+                <p class="font-bold ">ShopKart</p> 
+                <input   class=" bg-grey-300 h-[40px] w-[400px] rounded-[10px]"    type="text" placeholder="Search for products...">
+            </div>
+           
+        </div>
+
+
+        <div class=" h-[500px] w-[200px] border border-black rounded-[10px] flex-row m-[10px]">
+            <nav class="font-bold ">FlowTask</nav>
+        </div>
+
+
+        <div class="h-[500px] w-[150px] border border-black rounded-[10px] flex-row m-[10px]"></div>
+        <nav class="font-bold ">FlowTask</nav>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   *{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   }
+   body{
+    background:#1e1e1e;
+    color: #cccccc;
+    font-family: Arial,sans-serif;
+   }
+   .topbar{
+    width: 100%;
+    height: 37px;
+    background: #181818;
+    display: flex;
+    align-items: center;
+    user-select: none;
+   }
+   .logo img{
+    width: 20px;
+    height: 20px;
+   }
+   .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+   }
+   .menu-item{
+    height: 100%;
+   }
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="logo">
+            <img src="download.svg">
+        </div>
+
+        <nav class="menu">
+            <div class="menu-item">File</div>
+            <div class="menu-item">Edit</div>
+            <div class="menu-item">Selection</div>
+            <div class="menu-item">View</div>
+            <div class="menu-item">Go</div>
+            <div class="menu-item">Run</div>
+            <div class="menu-item">Terminal</div>
+            <div class="menu-item">Help</div>
+        </nav>
+        <div class="center">
+            <div class="navigation">
+                <button>←</button>
+                <button>→</button>
+            </div>
+            <div class="project-box">
+                <span class="project-name">fullstack1</span>
+                <span class="search-icon">◇</span>
+                <span class="dropdown">˅</span>
+            </div>
+            <div class="small-icon">◐</div>
+        </div>
+
+        <div class="right-controls">
+            <div class="control-icon">▦</div>
+            <div class="control-icon">▯</div>
+            <div class="control-icon">▣</div>
+            <div class="control-icon">▯</div>
+            <div class="control-icon">◎</div>
+
+            <div class="window-control minimize">−</div>
+            <div class="window-control maximize">□</div>
+            <div class="window-control close">×</div>
+        </div>
+    </header>
+
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+         display: flex;
+         flex-direction: row;
+         outline: 1px solid black;
+         height: 200px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+        .container>div{
+            outline: 1px dashed black;
+            height: 100px;
+            flex-basis: 100px;
+            align-items: center;
+            justify-items: center;
+        }
+        .container>div:nth-child(odd){
+            background-color: aquamarine;
+            align-items: center;
+            justify-items: center;
+        }
+
+        .container2{
+         display: flex;
+         flex-direction: row;
+         outline: 1px solid black;
+
+        }
+        .container2>div{
+            outline: 1px dashed black;
+            flex-basis: 100px;
+            height: 100px;
+            align-content: center;
+            
+        }
+         .container2>div:nth-child(odd){
+            background-color: aquamarine;
+        }
+         .container2>.box1{
+            flex-shrink: 3;
+            flex-grow: 3;
+        }
+    </style>
+</head>
+
+<body>
+     <p> </p>
+    <div class="container"> 
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </div>
+
+
+    <p>flex shrink and flex grow</p>
+    <div class="container2"> 
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+    </div>
+</body>
+
+</html>

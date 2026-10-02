@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1,#box2,#box3{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: grey;
+            box-shadow: 5px 5px 5px  black;
+        }
+        #box1:hover,#box2:hover,#box3:hover{
+            box-shadow:5px 5px 5px  black;
+        }
+        #box1:focus{
+            background-color: lightgray;
+            box-shadow:inset 5px 5px 5px  black;
+        }
+        #box2:focus{
+            background-color: aqua;
+        }
+        #box3:focus{
+            background-color: green;
+        }
+        #box1:active{
+            box-shadow:0 0 transparent;
+        }
+        #box2:active{
+            box-shadow: none;
+             box-shadow:inset 5px 5px 5px  black;
+        }
+        a:link{
+            color: red;
+            text-decoration: none;
+        }
+        a:visited{
+            color:pink;
+        }
+        button:active {
+    transform: scale(0.95);
+}
+    </style>
+</head>
+<body>
+    <button id="box1">1</button>
+    <button id="box2">2</button>
+    <button id="box3">3</button>
+    <a href="#">link1</a>
+    <a href="http://127.0.0.1:5500/pseudoclass.html">link 2</a>
+</body>
+</html>

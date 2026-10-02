@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+        }
+        .box1,.box2,.box3{
+            width:300px;
+            height:300px;
+        }
+        .box1{
+            background:linear-gradient(45deg,red,black,white);
+        }
+        .box2{
+            background: radial-gradient(red,black,rgb(85, 3, 133),white);
+        }
+        .box3{
+            background: conic-gradient(red ,black,red);
+        } 
+        
+        .box4,.box5,.box6{
+            width:300px;
+            height:300px;
+        }
+        .box4{
+            background:repeating-linear-gradient(red ,black);
+        }
+        .box5{
+            background: repeating-radial-gradient(red ,black 5px ,blue 15px ,white 25px);
+        }
+        .box6{
+            background: repeating-conic-gradient(red ,black, red 30deg);
+        }
+    </style>
+</head>
+<body><p> linear gradient</p>
+    <div class="box1"></div>
+    <p>radial gradient</p>
+    <div class="box2"></div>
+    <p>
+        conic gradient
+    </p>
+    <div class="box3"></div>
+    <p>repeating linear gradient</p>
+    <div class="box4"></div>
+    <p>
+        repeating radial gradient
+    </p>
+    <div class="box5"></div>
+    <p>
+        repaeting conic gradient
+    </p>
+    <div class="box6"></div>
+
+</body>
+</html>

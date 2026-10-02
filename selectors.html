@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: red;
+        }
+
+        #i1 {
+            color: green;
+        }
+
+        .c1 {
+            color: orange;
+        }
+
+        li[for="label"] {
+            color: aqua;
+        }
+
+        span {
+            color: rgb(104, 104, 50);
+        }
+
+        ul>li.comb>ul>li.comb1 {
+            color: black;
+        }
+
+
+
+        ul .comb2 {
+            color: browm;
+        }
+
+        li:nth-child(7) {
+            color: rgb(237, 5, 245);
+        }
+
+        li:hover {
+            color: rgb(20, 12, 12);
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Universal</li>
+        <li id="i1">Id</li>
+        <li class="c1">Class</li>
+        <li for="label">Attribute</li>
+        <li>Elemment<span> E1</span></li>
+        <li class="comb">
+            <ul>
+                <li class="comb1">combinator1</li>
+                <li class="comb2">combinator2</li>
+                <li class="comb3">combinator3</li>
+            </ul>
+        </li>
+        <li>Pseudo Class</li>
+        <li>Pseudo Elemment</li>
+        
+    </ul>
+</body>
+
+</html>

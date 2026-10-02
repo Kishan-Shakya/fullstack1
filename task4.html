@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side {
+            width: 150px;
+            height: 1000px;
+            background-color: black;
+            color: aliceblue;
+            display: flex;
+            float: left;
+        }
+        .overview{
+            display: flex;
+            height: 50px;
+            outline: 1px solid black;
+            flex-direction: row;
+        }
+        .c2{
+            padding: 4px;
+            margin: 0px 4px;
+        }
+        .cards{
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            margin: 5px;
+        }
+        .cards>div{
+              width: 100px;
+              height: 150px;
+              outline: 1px solid black;
+              padding: 5px;
+            margin: 5px;
+        }
+        .orders{
+            outline: 1 px solid bla;
+        }
+    </style>
+</head>
+
+<body>
+        <p>DASHBOARD LAYOOUT</p>
+        <div class="side">
+            <ul>
+                <li>Dashboard</li>
+                <li>Dashboard</li>
+                <li>Users</li>
+                <li>Products</li>
+                <li>Orders</li>
+                <li>Settings</li>
+            </ul>
+        </div>
+
+        <div class="c2">
+            <div class="overview">
+              <p>Dashboard Overview</p>
+              <p>john doe</p>
+            </div>
+            <div class="cards">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+
+        <div class="orders">
+         <div class="box1"></div>
+         <div class="box2"></div>
+         <div class="box3"></div>
+         <div class="box4"></div>
+         <div class="box5"></div>
+        </div>
+</body>
+
+</html>
